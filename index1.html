@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Misaki YADOMI">
+        <meta name="keywords" content="Malaysia, Fieldwork, University student">
+        <link rel="stylesheet" href="css/base.css">
+        <title>Malaysia研修</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="top">Malaysia研修</h1>
+        </header>
+            
+        <div>
+            <h2>Profile</h2>
+            <img src="img①/back shot.lnk" alt="後ろ姿" width="200">
+            
+            <ul>
+                <li>九州から上京した大学4年生</li>
+                <li>語学系学部</li>
+            </ul>
+            <p>大学3年次に2週間の研修で訪問したマレーシアと研修内容についてを軽く紹介します。</p>
+            
+            <h2>About Malaysia</h2>
+            <img src="img①/flag186U8m.png" alt="国旗" width="300">
+            <img src="img①/Malaysia map.jpg" alt="地図" width="300">
+            <ul>
+                <li>面積:約33万平方キロメートル（日本の役0.9倍）</li>
+                <li>人口:3,270万人（2020年マレーシア統計局）</li>
+                <li>首都:クアラルンプール</li>
+                <li>民族:マレー系（69.6%）、中国系（22.6%）、インド系（6.8%）、その他（1%）（2020年マレーシア統計局）</li>
+                <div style="width: 300px;">
+                    <canvas id="chart" width="150" height="150"></canvas>
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+                <script>
+                    var ctx = $('#chart');
+                    var mychart = new Chart(ctx, {
+                        type: 'pie',
+                        data: {
+                            labels: [
+                                'マレー系',
+                                '中国系',
+                                'インド系',
+                                'その他',
+                            ],
+                            datasets: [{
+                                label: 'サンプルグラフ',
+                                data: [
+                                    69.6,
+                                    22.6,
+                                    6.8,
+                                    1,
+                                ],
+                                backgroundColor: [
+                                    'rgba(241, 107, 141, 1)',
+                                    'rgba( 31, 167, 165, 1)',
+                                    'rgba(249, 199,  83, 1)',
+                                    'rgba(176, 110,  30, 1)',
+                                    'rgba(124,  91, 164, 1)'
+                                ]
+                            }]
+                        },
+                        options: {
+                            legend: {
+                                position: 'bottom',
+                            },
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        display: false,
+                                        beginAtZero: true,
+                                    },
+                                    gridLines: {
+                                        display: false
+                                    }
+                                }]
+                            }
+                        }
+                    });
+                </script>
+                <li>言語:マレー語、中国語、タミール語、英語</li>
+                <li>宗教:イスラム教（61.3%）、仏教（19.8%）、キリスト教（9.2%）、ヒンドゥー教（6.3%）、儒教・道教等（1.3%）、その他(2.1%)</li>
+                <div style="width: 300px;">
+                    <canvas id="chart2" width="150" height="150"></canvas>
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+                <script>
+                    var ctx = $('#chart2');
+                    var mychart = new Chart(ctx, {
+                        type: 'pie',
+                        data: {
+                            labels: [
+                            'イスラム教',
+                            '仏教',
+                            'キリスト教',
+                            'ヒンドゥー教',
+                            '儒教・道教等',
+                            'その他',
+                            ],
+                            datasets: [{
+                                label: 'サンプルグラフ',
+                                data: [
+                                61.3,
+                                19.8,
+                                9.2,
+                                6.3,
+                                1.3,
+                                2.1,
+                                ],
+                                backgroundColor: [
+                                    'rgba(241, 107, 141, 1)',
+                                    'rgba( 31, 167, 165, 1)',
+                                    'rgba(249, 199,  83, 1)',
+                                    'rgba(176, 110,  30, 1)',
+                                    'rgba(124,  91, 164, 1)'
+                                ]
+                            }]
+                        },
+                        options: {
+                            legend: {
+                                position: 'bottom',
+                            },
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        display: false,
+                                        beginAtZero: true,
+                                    },
+                                    gridLines: {
+                                        display: false
+                                    }
+                                }]
+                            }
+                        }
+                    });
+                </script>
+            </ul>
+            <p>(外務省HP参照)</p>
+            
+            <h2>About Fieldwork</h2>
+            <p>2週間の研修では現地の大学や国際機関を訪問し教授や職員による授業を受講しました。</p>
+            <p>訪問先の一部紹介</p>
+            <img src="img①/World Bank.jpg" alt="world bank" width="300">
+            <p>国際機関であるWorld Bankのマレーシアオフィスを訪問し、経済成長や生産性に関する授業を受けました。</p>
+            <img src="img①/Ministry of Economic Affairs.jpg" alt="ministry" width="300">
+            <p>中央官庁が集積するプトラジャヤ内にある経済産業省でマレーシアの経済開発に関する授業を受けました。</p>
+            <img src="img①/class.jpg" alt="class" width="300">
+            <p>授業風景です。</p>
+
+            <h2>Sightseeing</h2>
+            <h3>個人的観光地ランキング</h3>
+            <p>研修期間中に訪問した観光地の中から個人的にオススメする観光地です。</p>
+
+            <table border="1">
+                <tr>
+                    <th></th>
+                    <td>個人的観光地ランキング</td>
+                    <td>説明</td>
+                </tr>
+                <tr>
+                    <th>1位</th>
+                    <td>ピンクモスク（Masjid Putra） <img src="img①/pink mosk.lnk" alt="mosk" width="300"></td>
+                    <td>クアラルンプールから南へ約20キロメートルのプトラジャヤという都市に位置します。
+                        外観も内観も共にピンクを基調とした可愛らしいモスクです。ローブの貸し出しも行なっており、着用すると建物内に入ることができます。</td>
+                </tr>
+                <tr>
+                    <th>2位</th>
+                    <td>ブルーモスク
+                        <p>(Masjid Sultan Salahuddin Abdul Aziz Shah) </p><img src="img①/Blue mosk.lnk" alt="mosk" width="300"></td>
+                    <td>クアラルンプールから西へ約20キロのシャーアラムという都市に位置します。外観も内観も共に青を基調とした綺麗なモスクです。肌を覆うヒジャブを着用し、ガイドさんに同行してもらい建物内を見学することができます。</td>
+                </tr>
+                <tr>
+                    <th>3位</th>
+                    <td>バトゥ洞窟（Batu Caves) <img src="img①/Batu Cave.lnk" alt="Cave" width="300"></td>
+                    <td>クアラルンプール近郊にあるヒンドゥー教に関係するカラフルな洞窟です。入り口には、高さ43mものヒンドゥー教の神像が立っています。神像を過ぎると、カラフルな長い階段があり、鍾乳洞に行くことができます。</td>
+                </tr>
+                <tr>
+                    <th>4位</th>
+                    <td>セントラルマーケット（Central Market） <img src="img①/central market.jpg" alt="market" width="300"></td>
+                    <td>クアラルンプールにある、雑貨店が集まった買い物やお土産巡りに適したショッピングモールです。</td>
+                </tr>
+                <tr>
+                    <th>5位</th>
+                    <td> マハメリ文化村（Mah Meri Cultural Village） <img src="img①/Village.jpg" alt="Village" width="300"></td>
+                    <td> クアラルンプールから南西方面のキャリー島に位置するマレーシアの少数民族であるMah Meri族の生活や伝統文化に触れることができる村です。</td>
+                </tr>
+            </table>
+
+           
+
+            
+
+            
+        </div>
+       
+        <a href="#top">TOPに飛ぶ</a>
+    </body>
+</html>

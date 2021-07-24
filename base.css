@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+h1{
+    text-align: center;
+
+    /* 背景色を指定するプロパティ */
+    background-color:cadetblue;
+}
+
+h2{
+    text-align:left;
+
+    /* 背景色を指定するプロパティ */
+    background-color:cornflowerblue;
+}
+
+table{
+    /* 罫線を表示するプロパティ（線の太さ、線のタイプ、線の色） */
+    border: 1px solid #000000;
+}
+
+th{
+    border: 1px double #000000;
+}
+
+td{
+    border: 1px dashed #FF0000;
+}
+
